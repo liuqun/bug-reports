@@ -36,7 +36,9 @@ void _xfs_ring_do_dequeue_internal(fcall_exchanger* _exchanger)
 ```
 
 # 【附件3： 与当前BUG相关联的其他代码片段】
-- 文件 xfs_assert.c
+
+### 文件 xfs_assert.c: ###
+
 ```
 #include "xfs_assert.h"
 
