@@ -13,7 +13,8 @@
  - Bug编号（暂定） BUG-20190904-1
 
 # Bug补丁
- - 补丁代码已经提交至git源代码管理系统, 提交日志SHA1-ID: d0b660e1af616a1d565ca471b4a02b095d16dcea (发现并改正xfs_ring无锁队列实现代码的assert判断条件错误的Bug)
+发现并改正xfs_ring无锁队列实现代码的assert判断条件错误的Bug
+ - 补丁代码已经提交至git源代码管理系统, git提交日志: `git log 4bcb034d1b4ea805ae72d6277033d24a5877e0f8`
  - Bug补丁提交日期: 2019-09-06 已经合并至git版本管理系统主分支
 
 
@@ -108,7 +109,6 @@ void xfs_assert_fatal( int bool_exp )
 
 # 【附件4: Bug补丁详细内容】
 ```
-From d0b660e1af616a1d565ca471b4a02b095d16dcea Mon Sep 17 00:00:00 2001
 From: liuqun <liuqun@192.168.1.77>
 Date: Wed, 4 Sep 2019 16:24:26 +0800
 Subject: [PATCH] 发现并改正xfs_ring无锁队列实现代码的assert判断条件错误的Bug
